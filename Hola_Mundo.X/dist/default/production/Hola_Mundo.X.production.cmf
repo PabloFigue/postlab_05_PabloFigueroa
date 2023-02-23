@@ -1,0 +1,297 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/POSTLAB_05.o
+udata_bank0 BANK0 1 20 20 A 1 1
+VectorReset CODE 0 0 0 282 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 2A-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 2A-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 282-1FFF 2
+ENTRY 282-1FFF 2
+IDLOC 2000-2003 2
+CODE 282-1FFF 2
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 282-1FFF 2
+STRING 282-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/POSTLAB_05.o
+0 VectorReset CODE >64:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+0 VectorReset CODE >67:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+2 VectorReset CODE >68:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+3 VectorReset CODE >75:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+4 VectorReset CODE >96:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+5 VectorReset CODE >97:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+6 VectorReset CODE >98:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+7 VectorReset CODE >100:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+8 VectorReset CODE >101:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+9 VectorReset CODE >102:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+A VectorReset CODE >103:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+B VectorReset CODE >105:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+C VectorReset CODE >106:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+D VectorReset CODE >107:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+E VectorReset CODE >108:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+F VectorReset CODE >109:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+10 VectorReset CODE >113:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+12 VectorReset CODE >114:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+13 VectorReset CODE >115:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+14 VectorReset CODE >116:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+15 VectorReset CODE >117:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+16 VectorReset CODE >118:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+17 VectorReset CODE >119:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+18 VectorReset CODE >122:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+1A VectorReset CODE >122:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+1B VectorReset CODE >122:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+1C VectorReset CODE >122:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+1D VectorReset CODE >123:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+1E VectorReset CODE >124:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+1F VectorReset CODE >127:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+100 VectorReset CODE >77:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+101 VectorReset CODE >78:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+102 VectorReset CODE >79:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+103 VectorReset CODE >80:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+104 VectorReset CODE >81:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+105 VectorReset CODE >82:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+106 VectorReset CODE >83:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+107 VectorReset CODE >84:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+108 VectorReset CODE >85:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+109 VectorReset CODE >86:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+10A VectorReset CODE >87:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+10B VectorReset CODE >88:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+10C VectorReset CODE >89:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+10D VectorReset CODE >90:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+10E VectorReset CODE >94:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+200 VectorReset CODE >131:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+201 VectorReset CODE >133:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+202 VectorReset CODE >134:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+203 VectorReset CODE >135:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+204 VectorReset CODE >136:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+205 VectorReset CODE >137:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+206 VectorReset CODE >138:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+208 VectorReset CODE >142:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+209 VectorReset CODE >143:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+20A VectorReset CODE >144:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+20B VectorReset CODE >145:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+20C VectorReset CODE >146:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+20D VectorReset CODE >147:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+20E VectorReset CODE >152:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+210 VectorReset CODE >153:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+211 VectorReset CODE >154:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+212 VectorReset CODE >155:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+213 VectorReset CODE >156:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+214 VectorReset CODE >157:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+215 VectorReset CODE >158:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+217 VectorReset CODE >158:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+218 VectorReset CODE >158:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+219 VectorReset CODE >158:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+21A VectorReset CODE >159:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+21B VectorReset CODE >162:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+21D VectorReset CODE >163:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+21E VectorReset CODE >164:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+21F VectorReset CODE >166:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+221 VectorReset CODE >167:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+222 VectorReset CODE >168:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+223 VectorReset CODE >169:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+224 VectorReset CODE >171:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+225 VectorReset CODE >172:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+226 VectorReset CODE >174:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+228 VectorReset CODE >175:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+229 VectorReset CODE >176:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+22A VectorReset CODE >177:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+22B VectorReset CODE >178:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+22C VectorReset CODE >181:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+22E VectorReset CODE >183:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+22F VectorReset CODE >184:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+230 VectorReset CODE >185:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+231 VectorReset CODE >186:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+232 VectorReset CODE >187:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+233 VectorReset CODE >190:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+235 VectorReset CODE >191:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+236 VectorReset CODE >192:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+237 VectorReset CODE >193:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+238 VectorReset CODE >194:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+239 VectorReset CODE >195:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+23A VectorReset CODE >197:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+23C VectorReset CODE >198:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+23D VectorReset CODE >199:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+23E VectorReset CODE >200:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+23F VectorReset CODE >203:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+240 VectorReset CODE >205:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+241 VectorReset CODE >206:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+242 VectorReset CODE >207:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+243 VectorReset CODE >208:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+244 VectorReset CODE >209:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+245 VectorReset CODE >217:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+246 VectorReset CODE >218:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+247 VectorReset CODE >219:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+248 VectorReset CODE >220:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+249 VectorReset CODE >221:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+24A VectorReset CODE >222:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+24B VectorReset CODE >223:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+24C VectorReset CODE >226:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+24D VectorReset CODE >227:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+24E VectorReset CODE >228:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+24F VectorReset CODE >229:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+250 VectorReset CODE >230:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+251 VectorReset CODE >231:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+252 VectorReset CODE >234:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+253 VectorReset CODE >235:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+254 VectorReset CODE >236:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+255 VectorReset CODE >237:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+256 VectorReset CODE >238:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+257 VectorReset CODE >241:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+258 VectorReset CODE >242:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+259 VectorReset CODE >243:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+25A VectorReset CODE >244:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+25B VectorReset CODE >245:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+25C VectorReset CODE >246:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+25D VectorReset CODE >250:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+25E VectorReset CODE >251:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+25F VectorReset CODE >252:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+260 VectorReset CODE >253:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+261 VectorReset CODE >254:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+262 VectorReset CODE >255:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+263 VectorReset CODE >256:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+264 VectorReset CODE >257:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+265 VectorReset CODE >258:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+266 VectorReset CODE >259:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+267 VectorReset CODE >260:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+268 VectorReset CODE >261:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+269 VectorReset CODE >262:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+26A VectorReset CODE >263:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+26B VectorReset CODE >264:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+26C VectorReset CODE >265:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+26D VectorReset CODE >266:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+26E VectorReset CODE >267:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+26F VectorReset CODE >268:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+270 VectorReset CODE >269:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+271 VectorReset CODE >270:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+272 VectorReset CODE >271:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+273 VectorReset CODE >272:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+274 VectorReset CODE >273:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+275 VectorReset CODE >274:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+276 VectorReset CODE >275:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+277 VectorReset CODE >276:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+278 VectorReset CODE >279:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+279 VectorReset CODE >280:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+27A VectorReset CODE >281:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+27B VectorReset CODE >283:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+27C VectorReset CODE >284:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+27D VectorReset CODE >285:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+27E VectorReset CODE >287:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+27F VectorReset CODE >288:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+280 VectorReset CODE >289:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+281 VectorReset CODE >290:C:\Users\pablo\MPLABXProjects\Hola_Mundo.X\POSTLAB_05.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 282 0 ABS 0 - -
+__Hspace_1 2A 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__HVectorReset 0 0 ABS 0 VectorReset -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 2A 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__LVectorReset 0 0 ABS 0 VectorReset -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 A 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
